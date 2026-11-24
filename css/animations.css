@@ -1,1 +1,99 @@
 
+/* =================================
+   MINIMOUNS - ANIMACIONES
+   ================================= */
+
+/* Aparición suave */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Entrada desde abajo */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Brillo mágico */
+@keyframes magicGlow {
+    0%, 100% {
+        filter: brightness(1);
+    }
+
+    50% {
+        filter: brightness(1.3);
+    }
+}
+
+/* Movimiento flotante */
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+/* Clases de animación */
+.fade-in {
+    animation: fadeIn 0.6s ease both;
+}
+
+.slide-up {
+    animation: slideUp 0.6s ease both;
+}
+
+.magic-glow {
+    animation: magicGlow 2s ease-in-out infinite;
+}
+
+.floating {
+    animation: floating 3s ease-in-out infinite;
+}
+
+/* Efecto al pasar sobre una tarjeta */
+.monster-card {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.monster-card:hover {
+    transform: translateY(-4px);
+}
+
+/* Efecto de pulsación */
+button {
+    transition: transform 0.2s ease;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+/* Respeto por usuarios que reducen animaciones */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
