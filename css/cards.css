@@ -1,1 +1,114 @@
 
+/* =================================
+   MINIMOUNS - TARJETAS COLECCIONABLES
+   ================================= */
+
+/* Colección de tarjetas */
+.cards-collection {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    width: 100%;
+}
+
+/* Tarjeta individual */
+.monster-card {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    background: var(--color-panel);
+    border: 3px solid #986b43;
+    border-radius: 14px;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Marcos según rareza */
+.monster-card.common {
+    border-color: #986b43;
+}
+
+.monster-card.uncommon {
+    border-color: #bfc7d5;
+}
+
+.monster-card.rare {
+    border-color: #368eea;
+    box-shadow: 0 0 12px rgba(54, 142, 234, 0.25);
+}
+
+.monster-card.epic {
+    border-color: #a15be8;
+    box-shadow: 0 0 14px rgba(161, 91, 232, 0.3);
+}
+
+.monster-card.legendary {
+    border-color: #ffd66b;
+    box-shadow: 0 0 18px rgba(255, 214, 107, 0.35);
+}
+
+/* Imagen de la criatura */
+.monster-image {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #292d49;
+}
+
+/* Nombre de la criatura */
+.monster-name {
+    color: var(--color-text);
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0 6px;
+    overflow-wrap: anywhere;
+}
+
+/* Rareza */
+.monster-rarity {
+    color: var(--color-gold);
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Elemento mágico */
+.monster-element {
+    color: var(--color-muted);
+    font-size: 13px;
+    margin: 8px 0;
+}
+
+/* Estadísticas */
+.monster-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 6px;
+    padding: 8px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 12px;
+}
+
+/* Identificador de colección */
+.monster-id {
+    color: var(--color-muted);
+    font-size: 10px;
+    margin-top: 8px;
+}
+
+/* Tarjeta para espacio vacío */
+.empty-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 180px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 2px dashed rgba(255, 214, 107, 0.4);
+    border-radius: 14px;
+    color: var(--color-gold);
+    font-size: 42px;
+    cursor: pointer;
+}
+
