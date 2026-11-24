@@ -1,1 +1,89 @@
 
+/* =================================
+   MINIMOUNS - DISEÑO RESPONSIVE
+   ================================= */
+
+/* Celulares pequeños */
+@media (max-width: 360px) {
+
+    #game-screen {
+        padding: 10px;
+    }
+
+    .cards-collection {
+        gap: 8px;
+    }
+
+    .monster-card {
+        padding: 5px;
+    }
+
+    .monster-name {
+        font-size: 14px;
+    }
+
+    .wallet {
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+}
+
+/* Celulares y tablets */
+@media (min-width: 600px) {
+
+    #game-screen {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 24px;
+    }
+
+    .cards-collection {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .loading-content {
+        max-width: 520px;
+    }
+}
+
+/* Computadoras */
+@media (min-width: 1000px) {
+
+    #game-screen {
+        max-width: 1100px;
+        padding: 30px;
+    }
+
+    .cards-collection {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .loading-content {
+        max-width: 580px;
+    }
+}
+
+/* Pantallas muy pequeñas */
+@media (max-height: 500px) {
+
+    #loading-screen {
+        overflow-y: auto;
+        align-items: flex-start;
+    }
+
+    .loading-content {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .loading-content h1 {
+        font-size: 34px;
+    }
+
+    .loading-content > p:first-of-type {
+        margin-bottom: 18px;
+    }
+}
+
