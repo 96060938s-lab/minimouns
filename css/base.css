@@ -1,1 +1,60 @@
 
+
+/* =================================
+   MINIMOUNS - ESTILOS GENERALES
+   ================================= */
+
+/* Colores principales */
+:root {
+    --color-background: #111326;
+    --color-panel: #1c2038;
+    --color-gold: #ffd66b;
+    --color-text: #ffffff;
+    --color-muted: #a9aec5;
+    --color-primary: #7655d9;
+}
+
+/* Reinicio general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Página principal */
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background: var(--color-background);
+    color: var(--color-text);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Contenedor principal */
+#app {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Elementos ocultos */
+[hidden] {
+    display: none !important;
+}
+
+/* Botones generales */
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* Imágenes */
+img {
+    display: block;
+    max-width: 100%;
+}
