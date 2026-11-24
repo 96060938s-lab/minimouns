@@ -1,1 +1,78 @@
 
+/* =================================
+   MINIMOUNS - DISTRIBUCIÓN GENERAL
+   ================================= */
+
+/* Pantalla principal */
+#game-screen {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 16px;
+}
+
+/* Encabezado */
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 0;
+    margin-bottom: 20px;
+}
+
+/* Título del encabezado */
+.header h1 {
+    color: var(--color-gold);
+    font-size: 24px;
+    font-weight: 800;
+}
+
+/* Billetera */
+.wallet {
+    background: var(--color-panel);
+    color: var(--color-gold);
+    border: 1px solid rgba(255, 214, 107, 0.3);
+    border-radius: 20px;
+    padding: 9px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Secciones generales */
+.game-section {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+/* Títulos de sección */
+.section-title {
+    color: var(--color-text);
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+/* Paneles generales */
+.panel {
+    width: 100%;
+    background: var(--color-panel);
+    border-radius: 16px;
+    padding: 16px;
+}
+
+/* Contenedores centrados */
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Espacio entre elementos */
+.content-gap {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
