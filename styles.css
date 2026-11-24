@@ -1,0 +1,58 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: #111326;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+#app {
+  width: 100%;
+  max-width: 480px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 20px;
+  background: #171a30;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #303451;
+}
+
+.header h1 {
+  color: #ffd66b;
+  font-size: 25px;
+}
+
+.wallet {
+  background: #242944;
+  color: #ffd66b;
+  padding: 10px 15px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+#game {
+  padding: 45px 10px;
+  text-align: center;
+}
+
+#game h2 {
+  color: #ffd66b;
+  margin-bottom: 15px;
+}
+
+#game p {
+  color: #b7bdd4;
+  line-height: 1.6;
+}
